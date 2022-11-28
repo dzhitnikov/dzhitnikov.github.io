@@ -62,6 +62,9 @@ body {
                     font-size: 16px;
                     color: #333333;
                 }
+                & a:hover {
+                    color: #CB1D95;
+                }
 
 
             }
@@ -495,9 +498,16 @@ body {
                     line-height: 24px;
                     color: #333333;
                     margin-left: 12px;
+                    pointer-events: auto;
                 }
                 a {
                     color: black;
+                }
+                a:hover {
+                    color: #CB1D95;
+                }
+                & .feedback-button:hover {
+                    color: rgba(233, 234, 235, 0.719)
                 }
 
                 & h4 {
@@ -592,7 +602,6 @@ body {
 
 @media (max-width: 1250px) {
     body {
-        overflow-x: hidden;
         & .header {
             width: 100%;
     
@@ -619,7 +628,6 @@ body {
             justify-content: unset;
             margin-bottom: 0;
             width: 80%;
-            overflow: hidden;
 
             & .text {
 
@@ -644,7 +652,7 @@ body {
             }
 
             & .image {
-                width: 40vw;
+                width: 40%;
                 background-repeat: no-repeat;
                 background-size: contain;
             }
@@ -848,7 +856,7 @@ body {
                 }
     
                 &__question {
-                    width: 350px;
+                    width: 340px;
                     font-size: 12px;
                 }
                 &__accessibility {
@@ -894,10 +902,11 @@ body {
                         
                     }
                     &__footer-image {
-                        max-width: 100%;
+                        max-width: 90%;
                         height: auto;
                         margin-left: 10px;
-                        margin: 12px 0 9px 12px;
+                        margin: 12px 0px 9px 3px;
+                        overflow: hidden;
                     }
         
                     &__description {

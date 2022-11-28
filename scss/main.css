@@ -64,6 +64,9 @@ body .header .container .nav a {
   font-size: 16px;
   color: #333333;
 }
+body .header .container .nav a:hover {
+  color: #CB1D95;
+}
 body .header .container .button {
   display: inline-block;
   background: linear-gradient(115.11deg, #F32C6D 10.12%, #CB1D95 100.01%);
@@ -445,9 +448,16 @@ body .footer__container__column .politic {
   line-height: 24px;
   color: #333333;
   margin-left: 12px;
+  pointer-events: auto;
 }
 body .footer__container__column a {
   color: black;
+}
+body .footer__container__column a:hover {
+  color: #CB1D95;
+}
+body .footer__container__column .feedback-button:hover {
+  color: rgba(233, 234, 235, 0.719);
 }
 body .footer__container__column h4 {
   font-family: "Manrope";
@@ -527,9 +537,6 @@ body .footer__rights {
 }
 
 @media (max-width: 1250px) {
-  body {
-    overflow-x: hidden;
-  }
   body .header {
     width: 100%;
   }
@@ -551,7 +558,6 @@ body .footer__rights {
     justify-content: unset;
     margin-bottom: 0;
     width: 80%;
-    overflow: hidden;
   }
   body .info-container .text h1 {
     font-size: 35px;
@@ -567,7 +573,7 @@ body .footer__rights {
     padding: 0 30px;
   }
   body .info-container .image {
-    width: 40vw;
+    width: 40%;
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -745,7 +751,7 @@ body .footer__rights {
     font-size: 12px;
   }
   body .consultation__order__question {
-    width: 350px;
+    width: 340px;
     font-size: 12px;
   }
   body .consultation__order__accessibility {
@@ -781,10 +787,11 @@ body .footer__rights {
     height: auto;
   }
   body .slider-container .swiper-slide__footer-image {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     margin-left: 10px;
-    margin: 12px 0 9px 12px;
+    margin: 12px 0px 9px 3px;
+    overflow: hidden;
   }
   body .slider-container .swiper-slide__description {
     margin-top: 0px;
