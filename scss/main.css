@@ -528,6 +528,12 @@ body .footer__rights {
 }
 
 @media (max-width: 1250px) {
+  body {
+    overflow-x: hidden;
+  }
+  body .header {
+    width: 100%;
+  }
   body .header .container .logo {
     width: 250px;
     height: 50px;
@@ -545,6 +551,8 @@ body .footer__rights {
     margin-right: 15px;
     justify-content: unset;
     margin-bottom: 0;
+    width: 80%;
+    overflow: hidden;
   }
   body .info-container .text h1 {
     font-size: 35px;
@@ -738,7 +746,7 @@ body .footer__rights {
     font-size: 12px;
   }
   body .consultation__order__question {
-    width: 370px;
+    width: 350px;
     font-size: 12px;
   }
   body .consultation__order__accessibility {
@@ -752,8 +760,9 @@ body .footer__rights {
     min-width: 200px;
   }
   body .slider-container {
-    width: 100%;
+    width: 90%;
     height: auto;
+    margin: 41px 10px;
   }
   body .slider-container .swiper-button-prev, body .slider-container .swiper-button-next {
     color: #D1D1D1;
@@ -845,14 +854,17 @@ body .footer__rights {
     justify-content: unset;
   }
   body .header .container-mobile .logo {
-    width: 400px;
+    display: block;
+    position: absolute;
+    top: 10%;
+    width: 70%;
     height: 80px;
     border-radius: 9px;
-    background-size: cover;
-    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
-    margin-bottom: 12em;
+    background-size: contain;
   }
   body .header .container-mobile .nav {
+    position: absolute;
+    top: 30%;
     display: flex;
     flex-direction: column;
     row-gap: 2em;
@@ -869,8 +881,9 @@ body .footer__rights {
   }
   body .header .container-mobile .button {
     display: block;
-    margin-top: 5em;
-    width: 300px;
+    position: absolute;
+    top: 85%;
+    width: 70%;
     line-height: 40px;
     font-size: 20px;
     font-weight: 600;
@@ -1013,7 +1026,8 @@ body .footer__rights {
 }
 @media (max-width: 465px) {
   body .info-container {
-    width: 100%;
+    margin-right: 0;
+    width: 90%;
   }
   body .info-container .text {
     display: block;
