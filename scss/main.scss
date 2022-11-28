@@ -51,8 +51,7 @@ body {
 
             & .logo {
                 width: 325px;
-                height: 70px;
-                background-image: url(/img/logo.svg);
+                height: auto;
             }
             & .nav {
                 display: flex;
@@ -994,11 +993,9 @@ body {
                     position: absolute;
                     top: 10%;
                     width: 70%;
-                    height: 80px;
+                    height: auto;
                     border-radius: 9px;
-                    background-size: contain;
-                    //box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
-                    
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
                 }
 
                 & .nav {
