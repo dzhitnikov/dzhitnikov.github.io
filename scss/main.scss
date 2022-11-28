@@ -33,6 +33,7 @@ body {
     font-family: 'Manrope';
     font-style: normal;
 
+
     & .header {
         background: #FFFFFF;
         box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
@@ -592,11 +593,12 @@ body {
 
 @media (max-width: 1250px) {
     body {
+        overflow-x: hidden;
         & .header {
-
+            width: 100%;
     
             & .container {
-    
+                    
                 & .logo {
                     width: 250px;
                     height: 50px;
@@ -617,6 +619,8 @@ body {
             margin-right: 15px;
             justify-content: unset;
             margin-bottom: 0;
+            width: 80%;
+            overflow: hidden;
 
             & .text {
 
@@ -845,7 +849,7 @@ body {
                 }
     
                 &__question {
-                    width: 370px;
+                    width: 350px;
                     font-size: 12px;
                 }
                 &__accessibility {
@@ -865,8 +869,9 @@ body {
             }
         }
         & .slider-container {  
-            width: 100%;
+            width: 90%;
             height: auto;
+            margin: 41px 10px;
     
             & .swiper-button-prev, .swiper-button-next {
                 color: #D1D1D1;
@@ -985,15 +990,20 @@ body {
                 justify-content: unset;
 
                 & .logo {
-                    width: 400px;
+                    display: block;
+                    position: absolute;
+                    top: 10%;
+                    width: 70%;
                     height: 80px;
                     border-radius: 9px;
-                    background-size: cover;
-                    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
-                    margin-bottom: 12em;
+                    background-size: contain;
+                    //box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+                    
                 }
 
                 & .nav {
+                    position: absolute;
+                    top: 30%;
                     display: flex;
                     flex-direction: column;
                     row-gap: 2em;
@@ -1015,8 +1025,9 @@ body {
 
                 & .button {
                     display: block;
-                    margin-top: 5em;
-                    width: 300px;
+                    position: absolute;
+                    top: 85%;
+                    width: 70%;
                     line-height: 40px;
                     font-size: 20px;
                     font-weight: 600;
@@ -1200,7 +1211,8 @@ body {
     body {
 
         & .info-container {
-            width: 100%;
+            margin-right: 0;
+            width: 90%;
 
             & .text {
                 display: block;
