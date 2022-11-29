@@ -21,3 +21,4 @@ const swiper = new Swiper('.swiper', {
     document.querySelector('body').classList.toggle('no-scroll');
 
 }
+new WOW().init();

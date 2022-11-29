@@ -10,6 +10,10 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 />
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
 </head>
 <body>
    <header class="header">
@@ -87,7 +91,7 @@
             Наши услуги
         </h2>
         <div class="services__list">
-            <div class="services__list__item">
+            <div class="services__list__item wow animate__animated animate__fadeInUp">
                 <div class="services__list__item__card">
                     <h3 class="services__list__item__card__title">
                         Рекламные материалы
@@ -107,7 +111,7 @@
                 </div>
                 <a class="services__list__item__button">Подробнее</a>
             </div>
-            <div class="services__list__item">
+            <div class="services__list__item wow animate__animated animate__fadeInUp">
                 <div class="services__list__item__card">
                     <h3 class="services__list__item__card__title">
                         Рекламные материалы
@@ -127,7 +131,7 @@
                 </div>
                 <a class="services__list__item__button">Подробнее</a>
             </div>
-            <div class="services__list__item">
+            <div class="services__list__item wow animate__animated animate__fadeInUp">
                 <div class="services__list__item__card">
                     <h3 class="services__list__item__card__title">
                         Рекламные материалы
@@ -147,7 +151,7 @@
                 </div>
                 <a class="services__list__item__button">Подробнее</a>
             </div>
-            <div class="services__list__item">
+            <div class="services__list__item wow animate__animated animate__fadeInUp">
                 <div class="services__list__item__card">
                     <h3 class="services__list__item__card__title">
                         Рекламные материалы
@@ -167,7 +171,7 @@
                 </div>
                 <a class="services__list__item__button">Подробнее</a>
             </div>
-            <div class="services__list__item">
+            <div class="services__list__item wow animate__animated animate__fadeInUp">
                 <div class="services__list__item__card">
                     <h3 class="services__list__item__card__title">
                         Рекламные материалы
@@ -190,8 +194,8 @@
         </div>
    </div>
    <div class="consultation">
-        <div class="consultation__order">
-            <h3 class="consultation__order__title">заказать Консультацию специалиста</h3>
+        <div class="consultation__order wow animate__animated animate__fadeInLeft" >
+            <h3 class="consultation__order__title ">заказать Консультацию специалиста</h3>
             <p class="consultation__order__text">Заполните форму и мы свяжемся с вами в ближайшее время!</p>
             <input type="text" class="consultation__order__name" placeholder="Ваше имя"><input type="text" class="consultation__order__number"placeholder="Номер вашего телефона">
             <textarea placeholder="Ваш вопрос" class="consultation__order__question"></textarea>
@@ -201,7 +205,7 @@
             <span class="consultation__order__accessibility__text">Я согласен с условиями обработки персональных данных</span></label>
             <a class="consultation__order__button">Отправить</a>
         </div>
-        <div class="consultation__image">
+        <div class="consultation__image wow animate__animated animate__fadeInRight">
             <img src="./img/order-image.svg">
         </div>
    </div>
@@ -310,6 +314,11 @@
 
     </footer>
    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+   <script src="js/wow.js"></script>
+              <script>
+              new WOW().init();
+              </script>
    <script src="./sript.js"></script>
+
 </body>
 </html>
